@@ -8,10 +8,10 @@ function App() {
     const data = new FormData();
     data.append("file", image);
 
-    data.append("upload_preset", "abubakarraza");
-    data.append("cloud_name", "abubakarraza64");
+    data.append("upload_preset", "upload-preset");
+    data.append("cloud_name", "cloudname");
 
-    fetch("https://api.cloudinary.com/v1_1/abubakarraza64/image/upload", {
+    fetch("https://api.cloudinary.com/v1_1/cloudname/image/upload", {
       method: "post",
       body: data
     }).then(res => res.json()).
